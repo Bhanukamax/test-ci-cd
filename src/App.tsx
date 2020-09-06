@@ -4,7 +4,7 @@ import TimerModule from './modules/timer-module';
 function App() {
   return (
     <>
-      <h1>test ci/cd</h1>
+      <h1>test dev environment</h1>
       <TimerModule />
     </>
   );
