@@ -28,3 +28,8 @@ jobs:
       run: yarn
     - name: Build page
       run: yarn build
+    - name: Upload build
+      run: aws s3 cp build/ s3://timer-app-prod --metadata-directive REPLACE --recursive
+
+
+#"deploy": "yarn build && aws s3 cp build/ s3://contacts-frontend --metadata-directive REPLACE --recursive --cache-control max-age=31557600"
